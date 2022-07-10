@@ -1,0 +1,416 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.text-white{
+    color: #fff !important;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    margin-left:  -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: 33.33333%;
+}
+.text-center{
+    text-align: center !important;
+}
+
+
+/* Main */
+#main { 
+    height: 2996.43px;
+}
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    z-index: 1;
+}
+ #nav{
+    display: inline-block;
+ }
+#nav, .subnav {
+    list-style-type: none;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+
+    position: relative;
+}
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none;/* ẩn gạch chân */
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li:hover > a,  #nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a{
+    line-height: 38px;
+    padding: 0 12px;
+    color: black;
+}
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+#header .search-btn:hover{
+    cursor: pointer;
+    background-color: #f44336;
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background: url('/the-band/asset/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 48px;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#slider .text-heading{
+    font-size:24px;
+    font-weight: 500;
+}
+#slider .text-description{
+    font-size: 15px;
+    padding: 25px;
+}
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    margin-bottom: 36px;
+
+}
+#content .section-heading{
+    text-transform: uppercase;
+    font-size:30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading{
+    margin: 25px 0;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text{
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-list{
+    overflow: hidden;
+    margin-top: 48px;
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin:15px 0;
+}
+#content .member-img{
+    width:154px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+/* Tour-section */
+.tour-section {
+    background-color: #000;
+}
+#content .tour-section .section-sub-heading{
+    margin-bottom: 40px;
+}
+.tour-section .tickets-list{
+    background-color: #fff;
+}
+.tickets-list .sold-out{
+    background-color: #f44336;
+    padding: 3px 4px;
+    color: #fff;
+    margin-left: 16px;
+}
+.tickets-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-color: #000;
+    color: #ffff;
+    line-height: 24px;
+    text-align: center;
+    margin: -3px;
+}
+.tickets-list li{
+    border-bottom: 1px solid #ddd ;
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #757575;
+    list-style-type: none;
+}
+
+/* Places */
+.place-list{
+
+    margin-bottom: 48px;
+
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+   background-color: #fff;
+   padding:16px;
+   font-size: 15px;
+
+}
+.place-heading{
+    font-weight: 600;
+}
+.place-time{
+    margin: 15px 0;
+    color: #757575;
+
+} 
+
+.place-desc{
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    padding: 11px 16px;
+    background-color: #000;
+    color:#fff;
+    text-decoration: none;
+    margin: 16px 0;
+    font-size: 15px;
+    border: none;
+}
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/* modal */
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    animation: modalFaceIn ease 0.5s ;
+}
+
+.modal-close{
+    background-color: #009688;
+    color:#fff;
+    position: absolute;
+    right: 0 ;
+    padding: 12px 11px;
+    font-size: 24px;
+    border: none;
+}
+.modal-close:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+.modal-header{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+.ti-bag {
+    margin-right: 12px;
+}
+.modal-body{
+    padding: 16px;
+    font-size: 16px;
+}
+
+.modal-input{   
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 16px 0;
+}
+#buy-tickets{
+    background-color: #009688;
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px;
+    border: none;
+    color: #fff;
+}
+#buy-tickets:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.modal-help {
+    padding: 0 16px 16px 16px;
+    text-align: right;
+}
+.modal-footer a{
+    color: #2196F3;
+}
+.modal.open{
+    display: flex;
+}
+
+/* Contact Form */
+.contact-content{
+    margin-top: 48px;
+    line-height: 1.5;
+}
+.contact-info{
+    font-size: 18px;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width:100%
+}
+.contact-form .form-submit-btn{
+    padding: 8px 16px;
+    background-color: #000;
+    color:#fff;
+    float: right;
+}
+.contact-form .form-submit-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+/* Footer-section */
+#footer {
+    padding: 64px 16px;
+    
+
+}
+#footer .socials-list{
+    font-size: 22px;
+}
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .socials-list a:hover{
+    opacity: 0.8;
+}
+#footer .copyright{
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 15px;
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+@keyframes modalFaceIn {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
